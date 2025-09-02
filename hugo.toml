@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-title   = "Hello Friend NG"
+title   = "Shaswat's AI Blog"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -72,7 +72,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "🚀🎯 policies, trajectories, episodes, value functions (the RL journey) 🎯🚀"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -122,13 +122,13 @@ disableHugoGeneratorInject = false
   # plausibleScriptSource = 'https://plausible.io/js/script.js'
 
   [params.author]
-    name = "Jane Doe"
+    name = "Shaswat Garg"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = 2023
+    trademark = 2025
     rss = true
     copyright = true
     author = true
@@ -148,7 +148,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "From Exploration to Exploitation"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -227,25 +227,22 @@ disableHugoGeneratorInject = false
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:sis_shaswat@outlook.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/Shaswat2001"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/in/shaswat-garg/"
 
   [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    name = "googlescholar"
+    url  = "https://scholar.google.ca/citations?user=wnVdDdIAAAAJ&hl=en"
 
 [languages]
   [languages.en]
@@ -262,10 +259,10 @@ disableHugoGeneratorInject = false
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
+    identifier = "blog"
+    name       = "Blog"
+    url        = "blog/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "misc"
+    name       = "Misc"
+    url        = "misc/"
