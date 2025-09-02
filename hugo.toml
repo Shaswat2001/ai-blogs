@@ -33,6 +33,10 @@ disableHugoGeneratorInject = false
   pagerSize = 20
   path = 'page'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [services]
   [services.rss]
       # Maximum number of items in the RSS feed.
