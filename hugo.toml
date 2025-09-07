@@ -264,7 +264,7 @@ staticDir = ["static", "static/images"]
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "blog/"
+    url        = "/blog"
   [[menu.main]]
     identifier = "misc"
     name       = "Misc"
