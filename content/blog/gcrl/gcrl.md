@@ -1,6 +1,6 @@
 +++
 date = '2025-09-07T13:30:23-04:00'
-draft = true
+draft = false
 title = 'From Blind Trial to Guided Journey: Understanding GCRL'
 +++
 
