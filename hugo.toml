@@ -28,6 +28,9 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
+staticDir = ["static", "static/images"]
+
+
 [pagination]
   disableAliases = false
   pagerSize = 20
