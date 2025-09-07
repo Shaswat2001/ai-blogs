@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shaswat&#39;s AI Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/ai-blog/</link>
     <description>Recent content on Shaswat&#39;s AI Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 07 Sep 2025 13:30:23 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ai-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Blind Trial to Guided Journey: Understanding GCRL</title>
-      <link>http://localhost:1313/blog/gcrl/gcrl/</link>
+      <link>http://localhost:1313/ai-blog/blog/gcrl/gcrl/</link>
       <pubDate>Sun, 07 Sep 2025 13:30:23 -0400</pubDate>
-      <guid>http://localhost:1313/blog/gcrl/gcrl/</guid>
+      <guid>http://localhost:1313/ai-blog/blog/gcrl/gcrl/</guid>
       <description>&lt;p&gt;In normal Reinforcement Learning (RL), the agent is thrown into the world with &lt;strong&gt;states&lt;/strong&gt; and &lt;strong&gt;actions&lt;/strong&gt;. The policy $π(a∣s)$ just tries to figure out which action works best in each state to maximize rewards over time.&lt;/p&gt;&#xA;&lt;p&gt;But here’s the problem: if the only reward comes at the &lt;strong&gt;very end&lt;/strong&gt;, the agent is basically &lt;strong&gt;guessing in the dark&lt;/strong&gt; until it accidentally stumbles upon success. Learning in this way can feel a lot like &lt;strong&gt;climbing a mountain without knowing how tall it is&lt;/strong&gt;.&lt;br&gt;&#xA;Imagine starting your hike, staring up at an endless slope, and not knowing when (or if) you’ll ever reach the top.&lt;br&gt;&#xA;Most people would feel lost and give up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World</title>
-      <link>http://localhost:1313/posts/2025/09/hello-world/</link>
+      <link>http://localhost:1313/ai-blog/posts/2025/09/hello-world/</link>
       <pubDate>Tue, 02 Sep 2025 02:29:32 -0400</pubDate>
-      <guid>http://localhost:1313/posts/2025/09/hello-world/</guid>
+      <guid>http://localhost:1313/ai-blog/posts/2025/09/hello-world/</guid>
       <description></description>
     </item>
   </channel>
