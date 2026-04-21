@@ -46,7 +46,7 @@ Instead of waiting for one giant reward at the end, the agent gets **small, mean
 
 The math looks like this:
 
-$$r(s,a,g) = 1 \{\lVert ϕ(s′) − g \rVert ≤ ε\}$$
+$$r(s,a,g) = \mathbf{1}_{\lbrace \lVert \phi(s^{\prime}) - g \rVert \le \varepsilon \rbrace}$$
 
 Don’t worry about the symbols too much—this just says:  
 **“reward = 1 if you’re close enough to the goal, otherwise reward = 0.”**

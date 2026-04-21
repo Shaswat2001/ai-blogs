@@ -50,7 +50,7 @@ Imagine starting your hike, staring up at an endless slope, and not knowing when
 Most people would feel lost and give up.">
   <meta itemprop="datePublished" content="2025-09-07T13:30:23-04:00">
   <meta itemprop="dateModified" content="2025-09-07T13:30:23-04:00">
-  <meta itemprop="wordCount" content="656">
+  <meta itemprop="wordCount" content="657">
   <meta itemprop="image" content="https://shaswat2001.github.io/ai-blog/">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -89,6 +89,26 @@ Most people would feel lost and give up.">
 
 
 
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [["$", "$"], ["\\(", "\\)"]],
+      displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>
+  mjx-container[display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+  }
+</style>
 
 
 
@@ -182,7 +202,7 @@ Step by step, those smaller wins add up to reaching the top. Suddenly, the polic
 <h2 id="rewards-become-more-helpful">Rewards Become More Helpful</h2>
 <p>Instead of waiting for one giant reward at the end, the agent gets <strong>small, meaningful rewards</strong> whenever it reaches a goal.</p>
 <p>The math looks like this:</p>
-<p>$$r(s,a,g) = 1 {\lVert ϕ(s′) − g \rVert ≤ ε}$$</p>
+<p>$$r(s,a,g) = \mathbf{1}_{\lbrace \lVert \phi(s^{\prime}) - g \rVert \le \varepsilon \rbrace}$$</p>
 <p>Don’t worry about the symbols too much—this just says:<br>
 <strong>“reward = 1 if you’re close enough to the goal, otherwise reward = 0.”</strong></p>
 <p>Think of it like a <strong>beeping treasure detector</strong>: it only goes off when you’re within a small bubble around the treasure.</p>

@@ -48,7 +48,7 @@ Step by step, those smaller wins add up to reaching the top. Suddenly, the polic
 <h2 id="rewards-become-more-helpful">Rewards Become More Helpful</h2>
 <p>Instead of waiting for one giant reward at the end, the agent gets <strong>small, meaningful rewards</strong> whenever it reaches a goal.</p>
 <p>The math looks like this:</p>
-<p>$$r(s,a,g) = 1 {\lVert ϕ(s′) − g \rVert ≤ ε}$$</p>
+<p>$$r(s,a,g) = \mathbf{1}_{\lbrace \lVert \phi(s^{\prime}) - g \rVert \le \varepsilon \rbrace}$$</p>
 <p>Don’t worry about the symbols too much—this just says:<br>
 <strong>“reward = 1 if you’re close enough to the goal, otherwise reward = 0.”</strong></p>
 <p>Think of it like a <strong>beeping treasure detector</strong>: it only goes off when you’re within a small bubble around the treasure.</p>
