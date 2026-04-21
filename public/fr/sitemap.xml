@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ai-blog/fr/categories/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/categories/"
+                href="https://shaswat2001.github.io/ai-blog/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/categories/"
+                href="https://shaswat2001.github.io/ai-blog/fr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/fr/series/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/fr/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/series/"
+                href="https://shaswat2001.github.io/ai-blog/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/series/"
+                href="https://shaswat2001.github.io/ai-blog/fr/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/fr/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/"
+                href="https://shaswat2001.github.io/ai-blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/"
+                href="https://shaswat2001.github.io/ai-blog/fr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/fr/tags/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/tags/"
+                href="https://shaswat2001.github.io/ai-blog/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/tags/"
+                href="https://shaswat2001.github.io/ai-blog/fr/tags/"
                 />
   </url>
 </urlset>

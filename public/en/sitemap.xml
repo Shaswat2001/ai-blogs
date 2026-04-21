@@ -2,69 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ai-blog/blog/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/blog/</loc>
     <lastmod>2025-09-07T13:30:23-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ai-blog/blog/gcrl/gcrl/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/blog/gcrl/gcrl/</loc>
     <lastmod>2025-09-07T13:30:23-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ai-blog/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/</loc>
     <lastmod>2025-09-07T13:30:23-04:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/"
+                href="https://shaswat2001.github.io/ai-blog/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/"
+                href="https://shaswat2001.github.io/ai-blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/posts/2025/09/hello-world/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/posts/</loc>
     <lastmod>2025-09-02T02:29:32-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ai-blog/posts/</loc>
-    <lastmod>2025-09-02T02:29:32-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ai-blog/tags/</loc>
-    <lastmod>2025-09-02T02:29:32-04:00</lastmod>
+    <loc>https://shaswat2001.github.io/ai-blog/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/tags/"
+                href="https://shaswat2001.github.io/ai-blog/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/tags/"
+                href="https://shaswat2001.github.io/ai-blog/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/tags/untagged/</loc>
-    <lastmod>2025-09-02T02:29:32-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ai-blog/categories/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/categories/"
+                href="https://shaswat2001.github.io/ai-blog/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/categories/"
+                href="https://shaswat2001.github.io/ai-blog/series/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ai-blog/series/</loc>
+    <loc>https://shaswat2001.github.io/ai-blog/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/ai-blog/fr/series/"
+                href="https://shaswat2001.github.io/ai-blog/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/ai-blog/series/"
+                href="https://shaswat2001.github.io/ai-blog/tags/"
                 />
   </url>
 </urlset>

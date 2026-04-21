@@ -1,27 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Shaswat&#39;s AI Blog</title>
-    <link>http://localhost:1313/ai-blog/</link>
-    <description>Recent content on Shaswat&#39;s AI Blog</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 07 Sep 2025 13:30:23 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/ai-blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>From Blind Trial to Guided Journey: Understanding GCRL</title>
-      <link>http://localhost:1313/ai-blog/blog/gcrl/gcrl/</link>
-      <pubDate>Sun, 07 Sep 2025 13:30:23 -0400</pubDate>
-      <guid>http://localhost:1313/ai-blog/blog/gcrl/gcrl/</guid>
-      <description>&lt;p&gt;In normal Reinforcement Learning (RL), the agent is thrown into the world with &lt;strong&gt;states&lt;/strong&gt; and &lt;strong&gt;actions&lt;/strong&gt;. The policy $π(a∣s)$ just tries to figure out which action works best in each state to maximize rewards over time.&lt;/p&gt;&#xA;&lt;p&gt;But here’s the problem: if the only reward comes at the &lt;strong&gt;very end&lt;/strong&gt;, the agent is basically &lt;strong&gt;guessing in the dark&lt;/strong&gt; until it accidentally stumbles upon success. Learning in this way can feel a lot like &lt;strong&gt;climbing a mountain without knowing how tall it is&lt;/strong&gt;.&lt;br&gt;&#xA;Imagine starting your hike, staring up at an endless slope, and not knowing when (or if) you’ll ever reach the top.&lt;br&gt;&#xA;Most people would feel lost and give up.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/ai-blog/posts/2025/09/hello-world/</link>
-      <pubDate>Tue, 02 Sep 2025 02:29:32 -0400</pubDate>
-      <guid>http://localhost:1313/ai-blog/posts/2025/09/hello-world/</guid>
-      <description></description>
-    </item>
-  </channel>
+    <channel>
+        <title>Shaswat&#39;s AI Blog</title>
+        <link>https://shaswat2001.github.io/ai-blog/</link>
+        <description>Recent content on Shaswat&#39;s AI Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Sun, 07 Sep 2025 13:30:23 -0400</lastBuildDate>
+        <atom:link href="https://shaswat2001.github.io/ai-blog/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+            
+        
+        
+        
+        
+        <item>
+            <title>From Blind Trial to Guided Journey: Understanding GCRL</title>
+            <link>https://shaswat2001.github.io/ai-blog/blog/gcrl/gcrl/</link>
+            <pubDate>Sun, 07 Sep 2025 13:30:23 -0400</pubDate>
+            
+            <guid>https://shaswat2001.github.io/ai-blog/blog/gcrl/gcrl/</guid>
+            <description>&lt;p&gt;In normal Reinforcement Learning (RL), the agent is thrown into the world with &lt;strong&gt;states&lt;/strong&gt; and &lt;strong&gt;actions&lt;/strong&gt;. The policy $π(a∣s)$ just tries to figure out which action works best in each state to maximize rewards over time.&lt;/p&gt;
+&lt;p&gt;But here’s the problem: if the only reward comes at the &lt;strong&gt;very end&lt;/strong&gt;, the agent is basically &lt;strong&gt;guessing in the dark&lt;/strong&gt; until it accidentally stumbles upon success. Learning in this way can feel a lot like &lt;strong&gt;climbing a mountain without knowing how tall it is&lt;/strong&gt;.&lt;br&gt;
+Imagine starting your hike, staring up at an endless slope, and not knowing when (or if) you’ll ever reach the top.&lt;br&gt;
+Most people would feel lost and give up.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>In normal Reinforcement Learning (RL), the agent is thrown into the world with <strong>states</strong> and <strong>actions</strong>. The policy $π(a∣s)$ just tries to figure out which action works best in each state to maximize rewards over time.</p>
+<p>But here’s the problem: if the only reward comes at the <strong>very end</strong>, the agent is basically <strong>guessing in the dark</strong> until it accidentally stumbles upon success. Learning in this way can feel a lot like <strong>climbing a mountain without knowing how tall it is</strong>.<br>
+Imagine starting your hike, staring up at an endless slope, and not knowing when (or if) you’ll ever reach the top.<br>
+Most people would feel lost and give up.</p>
+<p>Similarly, an AI agent faced only with the final destination might just wander aimlessly, never really learning how to get there.</p>
+<p><img src="/gcrl.png" alt="Checkpoint Analogy"></p>
+<hr>
+<h2 id="checkpoints-make-it-easier">Checkpoints Make It Easier</h2>
+<p>Now, what if we made the climb easier?</p>
+<p>Instead of aiming straight for the peak, we break the journey into <strong>smaller checkpoints</strong>—intermediate goals that are much easier to reach.</p>
+<p>The agent doesn’t need to worry about the summit; it just has to make it to the next checkpoint.<br>
+Step by step, those smaller wins add up to reaching the top. Suddenly, the policy becomes:</p>
+<p>$$π(a∣s,g)$$</p>
+<p>This means the agent chooses actions not just by looking at the current state $s$, but also by looking at the <strong>goal</strong> $g$.</p>
+<p>In human terms: you’re not wandering up the mountain randomly—you’re following directions toward the next checkpoint.</p>
+<hr>
+<h2 id="what-is-goal-conditioned-rl">What is Goal-Conditioned RL?</h2>
+<p>That’s the intuition behind <strong>Goal-Conditioned Reinforcement Learning (GCRL)</strong>.  Instead of only reasoning over states and actions, we also introduce <strong>goals</strong> as part of the learning process.</p>
+<p>By teaching the policy to reach <strong>achievable subgoals</strong>, we make the overall problem much more tractable.</p>
+<hr>
+<h2 id="rewards-become-more-helpful">Rewards Become More Helpful</h2>
+<p>Instead of waiting for one giant reward at the end, the agent gets <strong>small, meaningful rewards</strong> whenever it reaches a goal.</p>
+<p>The math looks like this:</p>
+<p>$$r(s,a,g) = 1 {\lVert ϕ(s′) − g \rVert ≤ ε}$$</p>
+<p>Don’t worry about the symbols too much—this just says:<br>
+<strong>“reward = 1 if you’re close enough to the goal, otherwise reward = 0.”</strong></p>
+<p>Think of it like a <strong>beeping treasure detector</strong>: it only goes off when you’re within a small bubble around the treasure.</p>
+<p>This makes the game way easier, because the agent gets feedback more often instead of waiting until the very end.</p>
+<hr>
+<h2 id="training-on-many-goals">Training on Many Goals</h2>
+<p>Since we don’t just care about one goal, the agent is trained on <strong>many possible goals</strong>.<br>
+The objective is:</p>
+<p>$$J(π) = E_{g∼p_g}[ E[\sum^t γ^t r(s_t,a_t,g)]]$$</p>
+<p>In words: the agent practices reaching random goals, collects rewards along the way, and learns a <strong>general policy</strong> that works for all of them.</p>
+<p>This is powerful because solving smaller goals builds the skills needed to solve the bigger task later.</p>
+<hr>
+<h2 id="universal-value-functions">Universal Value Functions</h2>
+<p>To help with planning, the agent also learns <strong>special value functions</strong> that depend on the goal.<br>
+For example:</p>
+<p>$$V_π(s,g) = E[\sum^t γ^t r(s_t,a_t,g)]$$</p>
+<p>This is called a <strong>Universal Value Function</strong>, because it works for <strong>any goal</strong>.</p>
+<p>Think of it as a <strong>scorecard</strong> that tells the agent:</p>
+<blockquote>
+<p>“If I’m here, how good is this state when I’m aiming for that goal?”</p></blockquote>
+<hr>
+<h2 id="goal-relabeling-learning-from-mistakes">Goal Relabeling: Learning from Mistakes</h2>
+<p>And here’s the coolest part: even when the agent misses the goal, the experience isn’t wasted.</p>
+<p>With a trick called <strong>goal relabeling</strong>, we pretend that <strong>wherever the agent ended up was the goal all along</strong>.</p>
+<p>It’s like hiking toward checkpoint $A$ but accidentally reaching checkpoint $B$:<br>
+well, you still practiced getting to $B$, and that’s valuable too.</p>
+<p>This makes the learning <strong>super data-efficient</strong>, because every episode teaches the agent something useful.</p>
+<hr>
+<h2 id="why-gcrl-is-powerful">Why GCRL is Powerful</h2>
+<p>So overall, Goal-Conditioned RL helps in two big ways:</p>
+<ol>
+<li><strong>More frequent, meaningful rewards</strong> – no more waiting until the end.</li>
+<li><strong>Failed attempts become useful data</strong> – nothing is wasted.</li>
+</ol>
+<p>That’s why, compared to plain RL, it feels less like <strong>climbing an endless mountain</strong><br>
+and more like a <strong>step-by-step journey with checkpoints guiding the way</strong>.</p>
+<hr>
+]]></content>
+        </item>
+        
+        
+    </channel>
 </rss>
